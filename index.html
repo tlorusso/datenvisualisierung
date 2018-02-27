@@ -28,16 +28,6 @@ Herausforderung: Die Vielzahl an Erhebungen. Datenvisualisierungen helfen uns da
  - Kommunikation relevanter Entwicklungen (in Print- &amp; Webpublikationen)
  - Als Teaser um die Sichtbarkeit zu erhöhen (Twitter)
 
-???
-Was tun wir mit Datenvisualisierungen? 
-
-Dataviz hilft uns dabei, eine unserer grössten Herausforderungen zu meistern: die Datenflut welche wir zu bewältigen haben. Unzählige Erhebungen zu den unterschiedlichsten Themen - von Bevölkerung zum Immobilienmarkt, Steuern etc. Dank Dataviz behalten wir den Überblick. Datavisualisierung ist bei uns Teil des Datenprozesses und kommt in verschiedenen Momenten zum Einsatz:
-
-1. Wir nutzen Datenvisualisierung um die Qualität der Daten zu prüfen. Beispiel Handänderungsdaten. Analyst visualisiert die Verteilungen / Lagemasse etc. um zuprüfen ob die Entiwkclungen in den Daten plausibel sind. Ein paar Grafiken verraten dies schnell.
-2. Wenn neue Analysen oder Publikationen zu einem Thema geplant sind, nützen wir Dataviz für explorative Zwecke, um den interessanten Entwicklungen auf die Schliche zu kommen.
-3. Grafiken welche diese Entwicklungen abbilden werden dann auch in die Publikation eingespiesen.
-4. Visualisierungen helfen auch die Sichtbarkeit unserer Publikationen zu erhöhen, in dem wir sie beispielsweise auf Twitter als 'Teaser' einsetzten. In unserer schellebigen Zeit, mit kleinen Informationshäppchen - Nutzer auf unsere publikationen aufmerksam machen. 
-
 ---
 class: center, middle
 
@@ -347,19 +337,11 @@ Altersquotient auf Bezirksebene, 1998 - 2017
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-???
-Nun, aber wieso ist Datenvisualisierung ein so mächtiges, hilfreiches Werkezug in unserem Alltag? Hier zur Demonstration eine Tabelle zu den Altersquotienten nach Bezirk für den Zeitraum 1998-2017. Wenn mir jemand von Ihnen wie aus der Pistole geschossen beantworten kann, welcher Bezirk als einziger 'jünger' wird also einen abnehmenden AQ aufweist und welcher den höchsten AQ hat, dann gratuliere ich der Person zur ausgezeichneten Sehkraft. Ist gemein so klein, aber so viel Info lässt sich in Zahlen nur so darstellen. 
-
-
 ---
 class: center,middle
 
 
-&lt;img src="thomas_files/figure-html/unnamed-chunk-2-1.png" height="460" /&gt;
-
-
-???
-Wir transformieren die Zahlen in Farben und voila: die Muster in den Daten werden ans Licht gebracht: Stadt Zürich nimmt die Zahl der Personen ü65 im Verhältnis zur Bev im Erwerbsalter ab, Meilen hat den höchsten AQ. Fast überall steigt der AQ.
+&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" height="460" /&gt;
 
 ---
 class: left, top
@@ -394,7 +376,7 @@ background-size: 100%
 class: center
 
 ---
-background-image: url(thomas_files/Rlogo.svg)
+background-image: url(Rlogo.svg)
 background-size: 30%
 background-position: 50% 44%
 class: center
@@ -416,14 +398,6 @@ R ist eine integrierte open-source Software-Umgebung für Datenmanipulation, sta
 &lt;img src="diagramm.png"/&gt;
 
 &lt;/center&gt;
-
-
-???
-Diese Definition greift aber mittlerweile zu kurz. Die Möglichkeiten in R  sind schier unbegrenzt.
-
-R bietet einen Weg, ohne Medienbrüche von der Datenquelle bis zur Publikation zu gelangen. Die Datenquelle daran anknüpfen - sei es DB , csv's oder excell, oder auch Daten direkt von APIs im Netz oder gar scraping. Über Datenmanipulation, Aufbereitung etc. bis hin zur Einbettung in das Endprodukt. 
-
--&gt; hinweis : open source gratis : keine lizenzgebühren. D.h. man kann gut im kleinen beginnen und Dinge einfach mal ausprobieren. Zum Beispiel mal die Grafiken für einen einzelnen Bericht so produzieren, ohne sich festelegen zu müssen ob man dann wirklich alles auf R umstellen will. Auch nur punktuell nutzen möglich. 
 
 ---
 class: left, top
@@ -459,47 +433,30 @@ Sobald die aktuellen Daten zur Branchenstruktur verfügbar sind werden auf Knopf
 
 
 
-&lt;img src="thomas_files/figure-html/unnamed-chunk-4-1.png" height="380" /&gt;
-
-
-???
-Nun : soviel zum konzeptuellen, nun ein Beispiel aus dem 'Fabrikalltag'.
-Sobald die neuen Daten zur Unternehmensstruktur verfügbar sind, erstellen wir mit 
-standard-skripts einen Grundstock an Grafiken, welche die Entwicklungen auf Branchenebene und Region aufzeigen. Wenn es noch weitere interessante Entwicklungen gibt, welche dargestellt werden sollen, dann kann dies dank Templates natürlich ebenfalls noch mit wenig Aufwand gemacht werden.
+&lt;img src="index_files/figure-html/unnamed-chunk-4-1.png" height="380" /&gt;
 
 ---
-class: left, top
 
 # Datenvisualisierung mit R
 
 Ausgewählte libraries für Datenvisualisierung mit R:
 
 - statische Grafiken (ggplot2) : http://ggplot2.tidyverse.org
-  - interaktivitäts gibts umsonst dazu : https://plot.ly/ggplot2
+  - Interaktivität gibts umsonst dazu : https://plot.ly/ggplot2
+- interaktive Visualisierungen: http://www.htmlwidgets.org
+
+
+**Räumliche Darstellungen**
   
-- interaktive Visualisierungen : http://www.htmlwidgets.org
-
-**Unsere eigenen Vorlagen &amp; Templates auf Github:**
-
-Theme &amp; Farben des statistischen Amtes (github):
-https://github.com/statistikZH/statR
-
-Templates für voll gelayoutete, CD-konforme Berichte
-https://github.com/statistikZH/statRmd
-
+z.B. mit: [tmap](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-nutshell.html), [leaflet](https://rstudio.github.io/leaflet/), [sf](https://github.com/r-spatial/sf/)
 
 ---
 class: center,middle
 
-Exkurs: Räumliche Darstellungen
 
 
 
-&lt;img src="thomas_files/figure-html/unnamed-chunk-6-1.png" height="560" /&gt;
-
-???
-
-einige von ihnen arbeiten sicherlich mit Geodaten - auch diese lassen sich mit R bestens verarbeiten. 
+&lt;img src="index_files/figure-html/unnamed-chunk-6-1.png" height="560" /&gt;
 
 ---
 background-image: url(gwr.gif)
@@ -551,17 +508,34 @@ Script-Sprache, keine Grafikerstellung via GUI bzw. Dropdown-Menü!
 
 → Hürden für Einstieg dank wachsendem Angebot an kostenlosen Tutorials &amp; Ressourcen tiefer denn je.
   
-???
-Wann lohnt es sich den Schritt von der Grafik-Manufaktur zur Grafik-Fabrik mit R zu machen? Wenn Sie ihre Daten nicht händisch verarbeiten wollen.
+---
+**Unsere Templates für Berichte &amp; Grafiken sind auf Github zu finden**
 
+Theme &amp; Farben des statistischen Amtes
 
-das bedeutet nicht, dass sie zwingend eine top strukturierte Datenbank brauchen, welche für die Weiterverarbeitung ideal ausgelegt ist. Sondern dass sie wenn sie sie selber Daten halten - egal ob in csv, excels etc. - sicherstellen dass deren Struktur möglichst kosntant bleibt. Falls Sie von Dritten Daten beziehen oder über APIs ist wichtig, dass Sie in Erfahrung bringen, wie stabil ihr Bezugskanal ist, wenn sie automatisieren möchten. Wir haben immer mal wieder Kunden die sich erkundigen, ob wir einen Datensatz X nach weiter in der gewünschten Struktur anbieten.
+https://github.com/statistikZH/statR
 
-Zum Coden : keine GUI basierte Lösung kann das bieten was coding kann. Excell / SAS etc. für gewisse Dinge schon, aber R bietet eine zukunftsfähige Lösung.
+Templates für gelayoutete &amp; CD-konforme Berichte
 
-Wer von Ihnen publiziert wiederkehrend Berichte etc. ? Wer arbeitet so ist dabei in die richtung zu gehen? Wer könnte es sich vorstellen?
+https://github.com/statistikZH/statRmd
 
-Datenverarbeitung bis output alles in R R umgebung nicht verlassen zB gis operationen etc in pdf eingebettet in präsent tion etc falls aktuallisiert werden muss auf knopfdruck ausländer nteile 2018. Falls sie Den selbrn vortrag nächstes Jahr nochmals hören möcHten mit aktualisierten grafiken - kein problem. Null vorbrreitungszeit. Code hinter den Grafiken - Praktisch für alles wieDrrkehrende.
+---
+background-image: url("libs/sticker-01.png")
+background-position: bottom right
+background-size:30%
+
+# Fragen?
+
+&lt;br&gt;
+
+Slides  
+https://github.com/statistikZH/datenvisualisierung
+
+Website  
+https://statistik.zh.ch
+
+Twitter  
+&lt;a href="https://twitter.com/statistik_zh?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"&gt;@statistik_zh&lt;/a&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
